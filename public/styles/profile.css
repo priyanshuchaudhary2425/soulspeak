@@ -1,0 +1,19 @@
+.profile-intro {
+    text-align: center;
+    margin: 2rem;
+}
+
+.delete-btn {
+    margin-top:2rem;
+    padding: 0.6rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #F2EFE7;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #9ACBD0;
+}

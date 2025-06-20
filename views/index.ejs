@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <title>SoulSpeak</title>
+</head>
+<body>
+  <header>
+  <div class="logo">
+    <h1>SoulSpeak</h1>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <nav id="nav-links">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/submit">Submit</a>
+    <% if (username) { %>
+      <a href="/profile"><%= username %></a>
+    <% } else { %>
+      <a href="/register">Register</a>
+      <a href="/login">Login</a>
+    <% } %>
+  </nav>
+</header>
+
+  <main>
+    <div class="banner">
+      <h1>Speak Your Soul😊</h1>
+    </div>
+
+    <div class="category">
+      <h2>Select a Category</h2>
+      <form action="/" method="get">
+        <select name="category" required>
+          <option value="" disabled selected>Select a category</option>
+          <option value="all">All</option>
+          <option value="poem">Poem</option>
+          <option value="shayri">Shayri</option>
+          <option value="story">Story</option>
+          <option value="reflection">Reflection</option>
+          <option value="others">Others</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="main-content">
+      <% items.forEach(item => { %>
+        <div class="content">
+          <h2><%= item.title %></h2>
+          <div class="formatted-body"><%- item.formattedBody %></div>
+          <p class="meta">@<%= item.username %> | <%= item.category %></p>
+        </div>
+      <% }) %>
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>SoulSPeak &copy; 2025</p>
+  </footer>
+  <script src="/scripts/navbar.js"></script>
+
+</body>
+</html>

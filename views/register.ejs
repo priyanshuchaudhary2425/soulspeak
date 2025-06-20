@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/register.css">
+  <title>SoulSpeak</title>
+</head>
+<body>
+  <header>
+  <div class="logo">
+    <h1>SoulSpeak</h1>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <nav id="nav-links">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/submit">Submit</a>
+    <% if (username) { %>
+      <a href="/profile"><%= username %></a>
+    <% } else { %>
+      <a href="/register">Register</a>
+      <a href="/login">Login</a>
+    <% } %>
+  </nav>
+</header>
+
+  <main>
+    <div class="register-container">
+        <form action="/register" method="post">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Register</button>
+        </form>
+
+        <hr class="dotted-separator">
+
+        <h2>Already have an account?</h2>
+       <a href="/login" class="btn">Login</a>
+    </div>
+
+    <br>
+    
+    
+  
+  </main>
+
+  <footer>
+    SoulSPeak 2025
+  </footer>
+  <script src="/scripts/navbar.js"></script>
+
+</body>
+</html>

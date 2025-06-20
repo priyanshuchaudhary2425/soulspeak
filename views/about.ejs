@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/about.css">
+  <title>SoulSpeak</title>
+</head>
+<body>
+  <header>
+  <div class="logo">
+    <h1>SoulSpeak</h1>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <nav id="nav-links">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/submit">Submit</a>
+    <% if (username) { %>
+      <a href="/profile"><%= username %></a>
+    <% } else { %>
+      <a href="/register">Register</a>
+      <a href="/login">Login</a>
+    <% } %>
+  </nav>
+</header>
+
+
+  <main>
+
+    <div class="about-page">
+  <h2>✨ About SoulSpeak</h2>
+  <p><strong>SoulSpeak</strong> is a safe and creative space where emotions find their voice.</p>
+
+  <p>Whether it’s through a <em>poem</em>, a heartfelt <em>story</em>, a touching <em>shayri</em>, or a deep <em>reflection</em>, SoulSpeak welcomes you to express what words often leave behind.</p>
+
+  <p>This platform is for those who write to <strong>heal</strong>, to <strong>connect</strong>, and to <strong>share</strong> their unspoken truths.</p>
+
+  <p>Every piece shared here is a window into someone's soul — <em>raw</em>, <em>real</em>, and <em>resonant</em>.</p>
+
+  <p><strong>Speak your heart.</strong><br>
+     <strong>Let your words echo.</strong><br>
+     <strong>This is your space — your SoulSpeak.</strong>
+  </p>
+</div>
+
+  </main>
+
+  <footer>
+    SoulSPeak 2025
+  </footer>
+  <script src="/scripts/navbar.js"></script>
+
+</body>
+</html>

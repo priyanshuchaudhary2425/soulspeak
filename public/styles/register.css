@@ -1,0 +1,126 @@
+.register-container {
+    max-width: 50%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #9ACBD0;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.register-container label {
+    font-weight: bold;
+}
+
+.register-container input {
+    padding: 0.6rem;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.6rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #F2EFE7;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: #9ACBD0;
+}
+
+.btn {
+    padding: 0.6rem;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #F2EFE7;
+    color: black;
+}
+
+.dotted-separator {
+  border: none;
+  border-top: 2px dashed black;
+  width: 200px;
+  margin: 1rem auto;
+}
+
+/* MOBILE CSS */
+@media (max-width: 600px) {
+
+    .register-container {
+    max-width: 90%;
+    width: 580px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #9ACBD0;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.register-container label {
+    font-weight: bold;
+}
+
+.register-container input {
+    padding: 0.6rem;
+    border: 1px solid black;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.6rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #F2EFE7;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 0.6rem;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #F2EFE7;
+    color: black;
+}
+
+.dotted-separator {
+  border: none;
+  border-top: 2px dashed black;
+  width: 200px;
+  margin: 1rem auto;
+}
+}
